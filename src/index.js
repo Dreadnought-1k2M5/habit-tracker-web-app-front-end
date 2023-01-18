@@ -7,16 +7,17 @@ import './index.css';
 
 //Pages/Components
 import App from './App';
+import Main from './pages/main';
 import LoginPage from './pages/login';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <LoginPage />
   },
   {
-    path: "login",
-    element: <LoginPage />
+    path: "main",
+    element: <Main />
   }
 ])
 
