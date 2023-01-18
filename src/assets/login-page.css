@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+@media screen and (min-width: 1500px) and (max-width: 1980px) {
+    .top-login-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(33, 33, 33);
+    }
+
+    .top-login-container > .form-login{
+        background-image: linear-gradient(90deg, rgba(106, 200, 255, 0.707), rgb(214, 152, 255)) ;
+        padding: 7px;
+        border-radius: 10px;
+        height: 50%;
+        width: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+/*         display: flex;
+        justify-content: space-around;
+        flex-direction: column; */
+    }
+
+    .top-login-container > .form-login > .input-box{
+        margin: 30px;
+
+    }
+    .top-login-container > .form-login > .input-box > input[type="text"], input[type="password"]{
+        width: 90%;
+        padding: 7px;
+        border-radius: 5px;
+        border: none;
+    }
+    .top-login-container > .form-login > .btn-container{
+        margin: auto;
+        width: 30%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top-login-container > .form-login > .btn-container{
+        
+    }
+
+
+
+
+}
