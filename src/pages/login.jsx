@@ -10,6 +10,7 @@ export default function LoginPage(){
 
  
     Axios.defaults.withCredentials = true;
+
     useEffect(()=>{
         Axios.get("http://localhost:8080/", {isAuthenticated: null}).then((response)=>{
             if(response.data.isAuthenticated){
@@ -21,16 +22,25 @@ export default function LoginPage(){
         })
     }, []);
 
-    function SubmitHandler(){
-        Axios.post('http://localhost:8080/login', {
+    function SubmitHandler(e, route){
+        e.stopPropagation();
+        Axios.post(`http://localhost:8080/${route}`, {
             username: username,
             password: password
         }).then((response)=>{
-            if(response.data.isAuthenticated){
-                Navigate('main');
-            }else{
-                alert("TRY AGAIN!!");
+            switch(route){
+                case 'login':
+                    if(response.data.isAuthenticated){
+                        Navigate('main');
+                    }else{
+                        alert("TRY AGAIN!!");
+                    }
+                    break;
+                case 'register':
+                    console.log(response.data);
+                    break;
             }
+
         })
     }
 
@@ -46,8 +56,8 @@ export default function LoginPage(){
                     <input type="password" value={password} onChange={(e)=> setPassword(e.target.value)} name="username" required />  
                 </div>
                 <div className='btn-container'>
-                    <input type="submit" className='btn-login' value="Login" onClick={SubmitHandler}/>
-                    <button className='btn-register'>Register</button>
+                    <input type="submit" className='btn-login' value="Login" onClick={(e)=> SubmitHandler(e, 'login')}/>
+                    <button className='btn-register' onClick={(e)=> SubmitHandler(e, 'register')}>Register</button>
                 </div>
             </div>
         </div>

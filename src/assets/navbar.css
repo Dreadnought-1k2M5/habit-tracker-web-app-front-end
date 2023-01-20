@@ -1,0 +1,25 @@
+
+@media screen and (min-width: 1500px) and (max-width: 1980px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(33, 33, 33);
+        color: rgb(225, 225, 225);
+        padding: 5px;
+        /* GRID */
+        grid-area: navbar;
+    }
+    .navbar > .user-bar-box{
+
+        display: flex;
+        justify-content: flex-end;
+        
+        padding: 0px 0px 0px 10px;
+        align-items: center;
+
+    }
+    .navbar > .user-bar-box > p{
+        margin-right: 5px;;
+    }
+}
