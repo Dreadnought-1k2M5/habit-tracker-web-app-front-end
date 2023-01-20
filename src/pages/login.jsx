@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import '../assets/login-page.css';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +7,19 @@ export default function LoginPage(){
     let [username, setUsername] = useState('');
     let [password, setPassword] = useState('');
     let Navigate = useNavigate();
+
+ 
+    Axios.defaults.withCredentials = true;
+    useEffect(()=>{
+        Axios.get("http://localhost:8080/", {isAuthenticated: null}).then((response)=>{
+            if(response.data.isAuthenticated){
+                Navigate('main');
+            }
+            else{
+                console.log("FALSE");
+            }
+        })
+    }, []);
 
     function SubmitHandler(){
         Axios.post('http://localhost:8080/login', {
