@@ -12,7 +12,7 @@ img {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: rgb(33, 33, 33);
+        background-color: rgb(45, 45, 45);
     }
 
     .top-login-container > .form-login{

@@ -1,6 +1,7 @@
 @media screen and (min-width: 1500px) and (max-width: 1980px){
     .top-main-container{
         display: grid;
-        grid-template-areas: "navbar navbar navbar";
+        grid-template-areas: "navbar navbar navbar"
+                            "profile profile profile";
     }
 }

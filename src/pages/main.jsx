@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Navbar from '../components/navbar';
+import Profile from "../components/profile";
+import ParentPanel from "../components/ParentPanel";
 
 import '../assets/main.css';
 
@@ -29,6 +31,10 @@ function Main(){
     return (
         <div className="top-main-container">
             <Navbar username={username}/>
+            <Profile />
+            <ParentPanel>
+                
+            </ParentPanel>
         </div>
     )
 }

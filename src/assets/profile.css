@@ -1,0 +1,30 @@
+@media screen and (min-width: 1500px) and (max-width: 1980px){
+    .profile-container{
+        /* GRID */
+        grid-area: profile;
+        background-color: rgb(26, 26, 26);
+        padding: 10px;
+        color: rgb(234, 234, 234);
+    }
+    .profile-container > .profile-box{
+        padding: 12px;
+        display: flex;
+        /* background-color: red; */
+        width: 70%;
+        margin: auto;
+
+    }
+    .profile-container > .profile-box > .profile-item1{
+        display: flex;
+        /* background-color: green; */
+        width: 35%;
+
+    }
+    .profile-container > .profile-box > .profile-item1 > div{
+        margin: 5px;
+    }
+    .profile-container > .profile-box > .profile-item1 > div > .img-profile{
+        width: 100px;
+        height: 100px;
+    }
+}
