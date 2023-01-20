@@ -2,6 +2,7 @@
     .top-main-container{
         display: grid;
         grid-template-areas: "navbar navbar navbar"
-                            "profile profile profile";
+                            "profile profile profile"
+                            "panel panel panel";
     }
 }

@@ -4,13 +4,15 @@ import { useNavigate } from "react-router-dom";
 
 import Navbar from '../components/navbar';
 import Profile from "../components/profile";
-import ParentPanel from "../components/ParentPanel";
+import TabComponent from "../components/TabComponent";
+import HabitComponent from "../components/habit-comp";
 
 import '../assets/main.css';
 
 
 function Main(){
     let [username, setUsername] = useState('');
+    let [activeTab, setActiveTab] = useState('habit');
 
     let Navigate = useNavigate();
     
@@ -32,9 +34,12 @@ function Main(){
         <div className="top-main-container">
             <Navbar username={username}/>
             <Profile />
-            <ParentPanel>
+            <TabComponent setActiveTab={setActiveTab}>
+                {activeTab === 'habit' && <HabitComponent />}
+                {/* {activeTab === 'daily' && }
+                {activeTab === 'todo' && } */}
                 
-            </ParentPanel>
+            </TabComponent>
         </div>
     )
 }

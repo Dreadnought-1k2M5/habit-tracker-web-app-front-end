@@ -1,0 +1,27 @@
+@media screen and (min-width: 1500px) and (max-width: 1980px){
+    .habits-container{
+        background-color: rgb(39, 39, 39);
+        color: rgb(229, 229, 229);
+        padding: 5px;;
+        width: 20%;
+        display: block;
+    }
+    .habits-container > .habits-container-box1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .habits-container > .habits-container-box2{
+        /* background-color: red; */
+    }
+    .habits-container > .habits-container-box2 > .habits-container-list-habits{
+        list-style-type: none;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+    .habits-container > .habits-container-box2 > .habits-container-list-habits > li > .habit-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+}
