@@ -1,8 +1,14 @@
 @media screen and (min-width: 1500px) and (max-width: 1980px){
     .top-main-container{
         display: grid;
+/*         grid-template-areas: "profile navbar navbar"
+                            "profile panel panel"
+                            "profile panel panel"; */
         grid-template-areas: "navbar navbar navbar"
-                            "profile profile profile"
-                            "panel panel panel";
+                            "panel panel panel"
+                            "panel panel panel"; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0fr 1fr 3fr;
+        height: 100vh;
     }
 }

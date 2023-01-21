@@ -13,8 +13,7 @@ export default function TabComponent({children, setActiveTab}){
         <div className='tab-container'>
             <div className='tab'>
                 <button className={`${clickedState === 'habit' && 'btn-clicked'} btn-none`} onClick={(e)=> ClickHandler(e, 'habit')}>Habits</button>
-                <button className={`${clickedState === 'daily' && 'btn-clicked'} btn-none`} onClick={(e)=> ClickHandler(e, 'daily')}>Daily Routines</button>
-                <button className={`${clickedState === 'todo' && 'btn-clicked'} btn-none`} onClick={(e)=> ClickHandler(e, 'todo')}>To Do List</button>
+                <button className={`${clickedState === 'profile' && 'btn-clicked'} btn-none`} onClick={(e)=> ClickHandler(e, 'profile')}>Profile</button>
             </div>
             {children}
         </div>

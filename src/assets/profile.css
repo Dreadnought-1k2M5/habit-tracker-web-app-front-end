@@ -3,21 +3,20 @@
         /* GRID */
         grid-area: profile;
         background-color: rgb(26, 26, 26);
-        padding: 10px;
         color: rgb(234, 234, 234);
     }
     .profile-container > .profile-box{
-        padding: 12px;
         display: flex;
-        /* background-color: red; */
-        width: 90%;
+        background-image: linear-gradient(90deg, rgba(106, 200, 255, 0.707), rgb(214, 152, 255)) ;
         margin: auto;
+        flex-direction: column;
 
     }
     .profile-container > .profile-box > .profile-item1{
         display: flex;
         /* background-color: green; */
-        width: 35%;
+        flex-direction: column;
+        align-items: center;
 
     }
     .profile-container > .profile-box > .profile-item1 > div{

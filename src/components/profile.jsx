@@ -9,8 +9,8 @@ export default function Profile(){
                         <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" className='img-profile' alt="" />
                     </div>
                     <div>
-                        <h2>Joshua Lumanog</h2>
-                        <p>Total to-do tasks finished: </p>
+                        <h3>Joshua Lumanog</h3>
+                        {/* <p>Total to-do tasks finished: </p> */}
                     </div>
                 </div>
 {/*                 <div className='profile-item2'>

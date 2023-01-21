@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Navbar from '../components/navbar';
-import Profile from "../components/profile";
+/* import Profile from "../components/profile"; */
 import TabComponent from "../components/TabComponent";
 import HabitComponent from "../components/habit-comp";
 
@@ -33,11 +33,8 @@ function Main(){
     return (
         <div className="top-main-container">
             <Navbar username={username}/>
-            <Profile />
             <TabComponent setActiveTab={setActiveTab}>
                 {activeTab === 'habit' && <HabitComponent />}
-                {/* {activeTab === 'daily' && }
-                {activeTab === 'todo' && } */}
                 
             </TabComponent>
         </div>

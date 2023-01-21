@@ -4,9 +4,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: rgb(38, 38, 38);
+        background-color: rgb(26, 26, 26);
         color: rgb(225, 225, 225);
-        padding: 5px;
+        align-items: center;
+        
         /* GRID */
         grid-area: navbar;
     }
@@ -20,6 +21,16 @@
 
     }
     .navbar > .user-bar-box > p{
-        margin-right: 5px;;
+        margin-right: 5px;
+    }
+    .navbar > .user-bar-box > button{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 13px;
+        transition: 0.3s;
+        font-size: 12px;
+        background-color: rgb(80, 80, 80);
+        color: white;
     }
 }
