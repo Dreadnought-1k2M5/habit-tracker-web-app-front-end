@@ -1,0 +1,16 @@
+@media screen and (min-width: 1500px) and (max-width: 1980px){
+    .habit-component{
+        display: grid;
+        grid-template-areas: 
+                            "list . . ."
+                            "list . . ."
+                            "list . . .";
+        grid-template-columns: 2.3fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
+/*         background-color: red; */
+        width: 100%;
+        height: 88%;
+        padding: 10px;
+                            
+    }
+}
