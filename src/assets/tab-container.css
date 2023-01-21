@@ -1,9 +1,9 @@
 @media screen and (min-width: 1500px) and (max-width: 1980px){
     .tab-container{
         grid-area: panel;
-        background-color: rgb(234, 234, 234);
+        background-color: rgb(43, 43, 43);
         color: white;
-        overflow: hidden;
+        overflow: hidden; 
     }
     .tab-container > .tab{
         background-color: black;

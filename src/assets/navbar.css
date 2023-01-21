@@ -10,6 +10,7 @@
         
         /* GRID */
         grid-area: navbar;
+        padding: 4px;
     }
     .navbar > .user-bar-box{
 

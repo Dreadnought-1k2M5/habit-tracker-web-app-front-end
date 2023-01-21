@@ -5,9 +5,10 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../components/navbar';
 /* import Profile from "../components/profile"; */
 import TabComponent from "../components/TabComponent";
-import HabitComponent from "../components/habit-comp";
+import HabitList from "../components/habit-list";
 
 import '../assets/main.css';
+import HabitComponent from "../components/HabitComponent";
 
 
 function Main(){
@@ -34,7 +35,12 @@ function Main(){
         <div className="top-main-container">
             <Navbar username={username}/>
             <TabComponent setActiveTab={setActiveTab}>
-                {activeTab === 'habit' && <HabitComponent />}
+                {
+                    activeTab === 'habit' && 
+                    <HabitComponent>
+                        <HabitList />
+                    </HabitComponent>
+                }
                 
             </TabComponent>
         </div>
