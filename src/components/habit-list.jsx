@@ -11,7 +11,11 @@ export default function HabitList(){
                     <li>
                         <div className='habit-item'>
                             <div className='habit-title-box'>
-                                <p>lorem20</p>
+                                <p>
+                                    <b>
+                                        Mindfulness Meditation
+                                    </b>
+                                </p>
                             </div>
 
                             <div className='btn-boxes'>
