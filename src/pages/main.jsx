@@ -5,10 +5,11 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../components/navbar';
 /* import Profile from "../components/profile"; */
 import TabComponent from "../components/TabComponent";
-import HabitList from "../components/habit-list";
+import HabitList from "../components/sub-components/habit-list";
 
 import '../assets/main.css';
 import HabitComponent from "../components/HabitComponent";
+import PanelStat from "../components/sub-components/panel-stat";
 
 
 function Main(){
@@ -39,6 +40,7 @@ function Main(){
                     activeTab === 'habit' && 
                     <HabitComponent>
                         <HabitList />
+                        <PanelStat />
                     </HabitComponent>
                 }
                 

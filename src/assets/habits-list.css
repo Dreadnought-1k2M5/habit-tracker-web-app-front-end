@@ -10,11 +10,13 @@
         margin-left: 10px;
         grid-area: list;
         border-radius: 20px;
+        border: 0.5px solid rgb(111, 209, 255);
         
     }
     .habits-listbox > .habits-listbox-box1{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 25px;
         
     }
@@ -46,7 +48,7 @@
 
     }
     .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li:hover{
-        background-color: rgba(255, 255, 255, 0.242);
+        background-color: rgba(255, 255, 255, 0.181);
     }
     .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item{
         display: flex;
@@ -63,15 +65,18 @@
         font-size: 15px;
         text-align: justify;
     }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes{
+        display: flex;
+    }
 
     .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes > .edit-btn-css{
         background-color: rgba(72, 196, 72, 0.321);
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 5px 16px;
+        padding: 5px 10px;
         transition: 0.3s;
-        font-size: 14px;
+        font-size: 12px;
         color: white;
         margin: 2px;
         border-radius: 5px;
@@ -84,7 +89,7 @@
         cursor: pointer;
         padding: 5px 10px;
         transition: 0.3s;
-        font-size: 14px;
+        font-size: 12px;
         color: white;
         margin: 2px;
         border-radius: 5px;

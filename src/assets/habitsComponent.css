@@ -2,9 +2,9 @@
     .habit-component{
         display: grid;
         grid-template-areas: 
-                            "list . . ."
-                            "list . . ."
-                            "list . . .";
+                            "list box1 box1 box2"
+                            "list table table ."
+                            "list table table .";
         grid-template-columns: 2.3fr 2fr 2fr 2fr;
         grid-template-rows: 1fr 1fr 1fr;
 /*         background-color: red; */
