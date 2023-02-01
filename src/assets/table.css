@@ -1,0 +1,61 @@
+@media screen and (min-width: 1511px) and (max-width: 1980px){
+    .table-box-container{
+        grid-area: table;
+        background-color: rgb(24, 24, 24);
+        color: rgba(255, 255, 255, 0.766);
+
+        padding: 15px 15px 15px 15px;
+        margin: 4px 4px 4px 4px;
+        border-radius: 11px;
+        border: 0.5px solid rgb(111, 209, 255);
+    }
+    .table-box-container > table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 15px;
+        border: 0.5px solid rgba(111, 209, 255, 0.304);
+
+
+    }
+    .table-box-container > table td, th {
+        text-align: left;
+        padding: 15px;
+      }
+      .table-box-container > table > thead > .attributes-css{
+        background-color: rgba(111, 209, 255, 0.304);
+      }
+      tr:nth-child(even) {
+        background-color: #2f2f2f;
+      }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1511px){
+  .table-box-container{
+    grid-area: table;
+    background-color: rgb(24, 24, 24);
+    color: rgba(255, 255, 255, 0.766);
+
+    padding: 15px 15px 15px 15px;
+    margin: 4px 4px 4px 4px;
+    border-radius: 11px;
+    border: 0.5px solid rgb(111, 209, 255);
+}
+.table-box-container > table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    border: 0.5px solid rgba(111, 209, 255, 0.304);
+
+
+}
+.table-box-container > table td, th {
+    text-align: left;
+    padding: 15px;
+  }
+  .table-box-container > table > thead > .attributes-css{
+    background-color: rgba(111, 209, 255, 0.304);
+  }
+  tr:nth-child(even) {
+    background-color: #2f2f2f;
+  }
+}

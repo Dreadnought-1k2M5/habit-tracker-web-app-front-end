@@ -3,11 +3,12 @@ import Axios from "axios";
 
 import '../../assets/component-layout-css/AddHabits.css';
 
-export default function AddHabits({clickHandler}){
+export default function AddHabits({submitState, setSubmitState, clickHandler}){
     let [habit, setHabit] = useState({habitName: ''});
     function SubmitHabitHandler(e){
         Axios.post("http://localhost:8080/add-habit", {data: habit.habitName}).then((Response)=>{
             clickHandler({isClicked: false, value: "ADDED"});
+            setSubmitState(!submitState);
         })
         e.stopPropagation();
     }

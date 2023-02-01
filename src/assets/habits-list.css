@@ -1,15 +1,15 @@
 @media screen and (min-width: 1511px) and (max-width: 1980px){
     .habits-listbox{
         background-color: rgb(24, 24, 24);
-        color: rgb(229, 229, 229);
+        color: rgba(255, 255, 255, 0.766);
         padding: 15px;
         /* exclduded width and height to use the grid cell/area size */
 /*         width: 24%;
         height: 70%; */
         /* display: block; */
-        margin-left: 10px;
+        margin: 4px;
         grid-area: list;
-        border-radius: 20px;
+        border-radius: 11px;
         border: 0.5px solid rgb(111, 209, 255);
         
     }
@@ -63,7 +63,6 @@
     }
     .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .habit-title-box > p{
         font-size: 15px;
-        text-align: justify;
     }
     .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes{
         display: flex;
@@ -95,4 +94,101 @@
         border-radius: 5px;
     }
 
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1511px){
+    .habits-listbox{
+        background-color: rgb(24, 24, 24);
+        color: rgba(255, 255, 255, 0.766);
+        padding: 15px;
+        /* exclduded width and height to use the grid cell/area size */
+/*         width: 24%;
+        height: 70%; */
+        /* display: block; */
+        margin: 4px;
+        grid-area: list;
+        border-radius: 11px;
+        border: 0.5px solid rgb(111, 209, 255);
+        
+    }
+    .habits-listbox > .habits-listbox-box1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        
+    }
+    .habits-listbox > .habits-listbox-box1 > .add-btn-css{
+        background-color: rgb(72, 138, 196);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 16px;
+        transition: 0.3s;
+        font-size: 12px;
+        color: white;
+        border-radius: 5px;
+    }
+    .habits-listbox > .habits-listbox-box2{
+        /* background-color: rgba(255, 255, 255, 0.282); */
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits{
+        list-style-type: none;
+        
+        padding-left: 0px;
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li{
+        background-color: rgba(255, 255, 255, 0.138);
+        padding: 12px;
+        margin: 4px;
+        cursor: pointer;
+        border-radius: 6px;
+
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li:hover{
+        background-color: rgba(255, 255, 255, 0.181);
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .habit-title-box{
+        /* background-color: red; */
+        width: 60%;
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .habit-title-box > p{
+        font-size: 15px;
+    }
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes{
+        display: flex;
+    }
+
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes > .edit-btn-css{
+        background-color: rgba(72, 196, 72, 0.321);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: 0.3s;
+        font-size: 10px;
+        color: white;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    .habits-listbox > .habits-listbox-box2 > .habits-listbox-list-habits > li > .habit-item > .btn-boxes > .remove-btn-css{
+        background-color: rgba(248, 72, 72, 0.352);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: 0.3s;
+        font-size: 10px;
+        color: white;
+        margin: 2px;
+        border-radius: 5px;
+    }
 }

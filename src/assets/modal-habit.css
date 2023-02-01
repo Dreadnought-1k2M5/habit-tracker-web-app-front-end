@@ -1,0 +1,44 @@
+/* Modal background container and animation are defined in modal.css */
+@media screen and (min-width: 1511px) and (max-width: 1980px){
+    .modal-habit-add-box{
+        height: 180px !important;
+    }
+    .modal-habit-add-box > .modal-habit-content{
+        padding: 4px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: space-around;
+    }
+    .modal-habit-add-box > .modal-habit-content > .modal-habit-textbox-css{
+        width: 94%;
+        padding: 6px;
+        background-color: rgba(0, 0, 0, 0.226);
+        border-radius: 5px;
+        border: none;
+        color: rgb(230, 230, 230);
+    }
+    .modal-habit-add-box > .modal-habit-content > p{
+        font-size: 14px;
+    }
+
+    .modal-habit-add-box > .div-btn-box{
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-habit-add-box > .div-btn-box > .btn-add-record-class{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 13px;
+        transition: 0.3s;
+        font-size: 12px;
+        background-color: rgb(72, 138, 196);
+        color: white;
+        transition: 0.1s;
+        border-radius: 10px;
+        
+    }
+}

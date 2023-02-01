@@ -5,7 +5,8 @@
         flex-direction: row;
         justify-content: space-between;
         background-color: rgb(26, 26, 26);
-        color: rgb(225, 225, 225);
+        color: rgba(255, 255, 255, 0.766);
+
         align-items: center;
         
         /* GRID */
@@ -37,4 +38,45 @@
         background-color: rgb(80, 80, 80);
 
     }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1511px){
+    .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(26, 26, 26);
+    color: rgba(255, 255, 255, 0.766);
+
+    align-items: center;
+    
+    /* GRID */
+    grid-area: navbar;
+    padding: 4px;
+}
+.navbar > .user-bar-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 0px 10px;
+    align-items: center;
+
+}
+.navbar > .user-bar-box > p{
+    margin-right: 20px;
+}
+.navbar > .user-bar-box > button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 13px;
+    transition: 0.3s;
+    font-size: 12px;
+    background-color: rgba(33, 33, 33, 0.097);
+    color: white;
+    transition: 0.1s;
+}
+.navbar > .user-bar-box > button:hover{
+    background-color: rgb(80, 80, 80);
+
+}
 }
