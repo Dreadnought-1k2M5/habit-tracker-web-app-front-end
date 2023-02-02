@@ -9,9 +9,9 @@ import HabitList from "../components/sub-components/habit-list";
 
 import '../assets/main.css';
 import HabitComponent from "../components/HabitComponent";
-import TotalRoutineFinished from "../components/sub-components/total-routine";
+import TotalRoutineFinished from "../components/sub-components/total-points";
 /* import HighScore from "../components/sub-components/high-score"; */
-import TotalHoursComp from "../components/sub-components/hours-box";
+import TotalHoursComp from "../components/sub-components/total-hours";
 import TableComponent from "../components/sub-components/table";
 
 
@@ -34,7 +34,8 @@ function Main(){
             if(response.data.isAuthenticated){
                 setUsername(response.data.userProp);
                 setProfileTotal(response.data.totalValues);
-                setTableState(response.data.tableResult)
+                setTableState(response.data.tableResult);
+                console.log(response.data.totalValues);
             }else{
                 alert('Cookie has expired. Log in again.');
                 Navigate('/');
